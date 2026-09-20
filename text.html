@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InterviewIQ — AI Career Intelligence</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="cursor-glow"></div>
+<div id="toast"></div>
+
+<header class="nav">
+  <a class="logo" href="#" onclick="go('home')"><span class="logo-box">IQ</span><span>INTERVIEW<span class="violet">IQ</span></span></a>
+  <nav>
+    <button class="nav-item active" data-page="home" onclick="go('home')">Home</button>
+    <button class="nav-item" data-page="interview" onclick="go('interview')">AI Interview</button>
+    <button class="nav-item" data-page="dashboard" onclick="go('dashboard')">Analytics</button>
+    <button class="nav-item" data-page="roadmap" onclick="go('roadmap')">Roadmap</button>
+  </nav>
+  <button class="nav-cta" onclick="go('profile')">Launch Coach <span>↗</span></button>
+</header>
+
+<main>
+<section id="home" class="page active">
+  <div class="hero">
+    <div class="hero-copy">
+      <div class="status"><i></i> AI CAREER INTELLIGENCE · LIVE</div>
+      <h1>Turn interviews<br>into <em>opportunities.</em></h1>
+      <p class="hero-text">An intelligent interview coach that understands your role, listens to your answers, detects skill gaps, and builds the next step of your career.</p>
+      <div class="hero-buttons">
+        <button class="mass-btn" onclick="go('profile')">START YOUR INTERVIEW <b>↗</b></button>
+        <button class="ghost-btn" onclick="go('dashboard')"><span class="play">▶</span> Explore analytics</button>
+      </div>
+      <div class="hero-proof">
+        <div><strong>01</strong><span>Role-aware<br>questions</span></div>
+        <div><strong>02</strong><span>AI answer<br>analysis</span></div>
+        <div><strong>03</strong><span>Personalized<br>roadmap</span></div>
+      </div>
+    </div>
+
+    <div class="hero-stage">
+      <div class="grid-floor"></div>
+      <div class="halo"></div>
+      <div class="core">
+        <div class="core-ring ring1"></div><div class="core-ring ring2"></div><div class="core-ring ring3"></div>
+        <div class="core-center"><span>IQ</span><small>AI CORE</small></div>
+        <div class="orbit orbit1"><b>CV</b></div><div class="orbit orbit2"><b>ML</b></div><div class="orbit orbit3"><b>HR</b></div>
+      </div>
+      <div class="float-card fc1"><span class="fc-icon green">✓</span><div><small>READINESS</small><strong>82%</strong></div></div>
+      <div class="float-card fc2"><span class="fc-icon purple">✦</span><div><small>AI INSIGHT</small><strong>+12.4%</strong></div></div>
+      <div class="float-card fc3"><span class="fc-icon blue">◉</span><div><small>LIVE SESSION</small><strong>05:42</strong></div></div>
+      <div class="scan-line"></div>
+    </div>
+  </div>
+
+  <div class="marquee"><div>RESUME INTELLIGENCE ✦ ADAPTIVE INTERVIEW ✦ VOICE ANALYSIS ✦ SKILL GAP DETECTION ✦ CAREER ROADMAP ✦ </div></div>
+
+  <div class="dark-section">
+    <div class="section-top"><div><span class="label">01 / THE PROBLEM</span><h2>Most students practice.<br><em>Few know how to improve.</em></h2></div><p>InterviewIQ closes the feedback gap between preparation and performance.</p></div>
+    <div class="feature-grid">
+      <article><span class="feature-num">01</span><div class="feature-icon">⌁</div><h3>Adaptive questions</h3><p>Questions change with your target role, experience and previous answers.</p></article>
+      <article class="featured"><span class="feature-num">02</span><div class="feature-icon">◈</div><h3>Deep answer analysis</h3><p>Get structured feedback on relevance, technical accuracy, clarity and completeness.</p><div class="mini-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+      <article><span class="feature-num">03</span><div class="feature-icon">↗</div><h3>Actionable roadmap</h3><p>Your weak areas become focused learning goals for the next interview.</p></article>
+    </div>
+  </div>
+
+  <div class="demo-section">
+    <div class="section-top"><div><span class="label">02 / INSIDE THE COACH</span><h2>Your interview.<br><em>Under a microscope.</em></h2></div></div>
+    <div class="demo-ui">
+      <div class="demo-left"><div class="tiny-label">LIVE MOCK INTERVIEW <i></i></div><div class="question">“How would you explain machine learning to someone with no technical background?”</div><div class="demo-answer"><div class="avatar">IQ</div><div><span>YOUR ANSWER</span><p>“I would explain it as a system that learns patterns from examples instead of being given every rule...”</p></div></div><button class="listen">● AI IS ANALYZING YOUR ANSWER</button></div>
+      <div class="demo-right"><span class="tiny-label">REAL-TIME SIGNALS</span><div class="signal"><span>Relevance</span><b>92</b><i><u style="width:92%"></u></i></div><div class="signal"><span>Clarity</span><b>84</b><i><u style="width:84%"></u></i></div><div class="signal"><span>Technical</span><b>76</b><i><u style="width:76%"></u></i></div><div class="signal"><span>Completeness</span><b>68</b><i><u style="width:68%"></u></i></div><div class="ai-note">✦ <span>AI NOTE</span><strong>“Add one concrete example to make your explanation stronger.”</strong></div></div>
+    </div>
+  </div>
+
+  <div class="final-cta"><span class="label">03 / READY?</span><h2>Your next interview<br>starts <em>here.</em></h2><button class="mass-btn" onclick="go('profile')">BUILD MY SESSION ↗</button></div>
+</section>
+
+<section id="profile" class="page inner-page">
+  <div class="page-title"><span class="label">SESSION BUILDER / 01</span><h1>Build your <em>profile.</em></h1><p>Give the AI enough context to make your interview feel real.</p></div>
+  <div class="builder">
+    <div class="form-panel">
+      <div class="panel-head"><span>PROFILE INPUT</span><b>01—06</b></div>
+      <label>YOUR NAME<input id="name" placeholder="e.g. Abhinivesh"></label>
+      <label>FIELD / DEGREE<input id="branch" placeholder="e.g. CSE (AIML)"></label>
+      <label>TARGET ROLE<select id="role"><option>AI / ML Intern</option><option>Software Developer Intern</option><option>Data Analyst Intern</option><option>Python Developer</option><option>Web Developer</option></select></label>
+      <label>SKILLS<input id="skills" placeholder="Python, C, SQL, Machine Learning"></label>
+      <div class="resume-drop" onclick="document.getElementById('resume').click()"><input id="resume" type="file" accept=".pdf,.doc,.docx" hidden><span>↑</span><div><strong>DROP RESUME HERE</strong><small>PDF / DOCX · Optional for prototype</small></div></div>
+      <button class="mass-btn wide" onclick="saveProfile()">GENERATE MY INTERVIEW ↗</button>
+    </div>
+    <div class="preview-panel">
+      <div class="panel-head"><span>AI SESSION PREVIEW</span><b>LIVE</b></div>
+      <div class="profile-card"><div class="big-avatar" id="previewAvatar">A</div><h2 id="previewName">Your profile</h2><p id="previewRole">AI / ML Intern</p><div class="tags" id="previewTags"><span>Python</span><span>Machine Learning</span><span>Role-aware</span></div></div>
+      <div class="session-stats"><div><b>05</b><small>QUESTIONS</small></div><div><b>04</b><small>AI SIGNALS</small></div><div><b>01</b><small>ROADMAP</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="interview" class="page inner-page">
+  <div class="live-head"><div><span class="status"><i></i> LIVE AI SESSION</span><h1 id="liveRole">AI / ML Intern</h1></div><div class="timer-box">SESSION <strong id="timer">05:00</strong></div></div>
+  <div class="q-progress"><span>QUESTION <b id="qNo">01</b> / 05</span><i><u id="qBar"></u></i><span id="qPct">20%</span></div>
+  <div class="interview-grid">
+    <div class="question-panel">
+      <div class="q-label"><span id="qType">TECHNICAL</span><span id="qDiff">MEDIUM</span></div>
+      <div class="question-line"><div class="iq-mini">IQ</div><div><small>INTERVIEWIQ / AI INTERVIEWER</small><h2 id="qText">Tell me about yourself and why you are interested in this role.</h2></div></div>
+      <textarea id="answer" placeholder="Type your answer here..."></textarea>
+      <div class="answer-bar"><button onclick="voice()" id="voiceBtn">◉ USE VOICE</button><span id="words">0 WORDS</span></div>
+      <div class="action-row"><button class="ghost-btn" onclick="skip()">Skip</button><button class="mass-btn" onclick="submit()">SUBMIT ANSWER ↗</button></div>
+    </div>
+    <aside class="intel-panel"><span class="label">AI INTERVIEWER</span><div class="ai-face"><div>IQ</div></div><h3>Stay structured.</h3><p>Use <b>answer → example → result</b> whenever possible.</p><div class="intel-line"></div><small>SESSION READINESS</small><strong id="liveScore">—</strong></aside>
+  </div>
+</section>
+
+<section id="dashboard" class="page inner-page">
+  <div class="page-title split"><div><span class="label">PERFORMANCE INTELLIGENCE / 02</span><h1>Your <em>readiness.</em></h1><p>One screen. Every signal that matters.</p></div><button class="mass-btn" onclick="go('interview')">RUN ANOTHER ↗</button></div>
+  <div class="analytics-top">
+    <div class="readiness"><span class="label">INTERVIEW READINESS</span><div><strong id="overall">82</strong><small>/100</small></div><p>↑ 12% compared with your previous session</p><div class="radar-ring"><span>READY</span></div></div>
+    <div class="metric-grid"><div><span>TECHNICAL</span><b id="tech">78%</b><i><u style="width:78%"></u></i></div><div><span>RELEVANCE</span><b id="rel">88%</b><i><u style="width:88%"></u></i></div><div><span>CLARITY</span><b id="clarity">84%</b><i><u style="width:84%"></u></i></div><div><span>COMPLETE</span><b id="complete">76%</b><i><u style="width:76%"></u></i></div></div>
+  </div>
+  <div class="analytics-grid"><div class="analysis-card"><div class="panel-head"><span>AI FEEDBACK</span><b>LIVE REPORT</b></div><div class="feedback good"><b>✦ WHAT YOU DID WELL</b><p>Your answers stayed relevant and you connected technical concepts with your project experience.</p></div><div class="feedback improve"><b>↗ WHAT TO IMPROVE</b><p>Use more concrete technical examples. Add the approach, result and one measurable outcome.</p></div></div>
+  <div class="analysis-card"><div class="panel-head"><span>SKILL GAPS</span><b>PRIORITY</b></div><div class="gap"><div><span>Model evaluation</span><b>48%</b></div><i><u style="width:48%"></u></i></div><div class="gap"><div><span>SQL joins</span><b>55%</b></div><i><u style="width:55%"></u></i></div><div class="gap"><div><span>ML fundamentals</span><b>72%</b></div><i><u style="width:72%"></u></i></div></div></div>
+  <div class="analysis-card review"><div class="panel-head"><span>QUESTION-BY-QUESTION</span><b>5 SIGNALS</b></div><div id="reviews"></div></div>
+</section>
+
+<section id="roadmap" class="page inner-page">
+  <div class="page-title"><span class="label">CAREER ENGINE / 03</span><h1>Your path to <em>better answers.</em></h1><p>InterviewIQ converts weak signals into a focused learning plan.</p></div>
+  <div class="road"><div class="road-line"></div>
+    <div class="road-step done"><div class="dot">✓</div><div><span>FOUNDATION / COMPLETE</span><h2>Python fundamentals</h2><p>Core syntax, data structures and problem solving.</p></div></div>
+    <div class="road-step active"><div class="dot">02</div><div><span>PRIORITY / NOW</span><h2>Machine Learning fundamentals</h2><p>Supervised learning, classification, regression and model evaluation.</p><button class="inline-btn" onclick="toast('Learning module ready to connect to your backend.')">START MODULE ↗</button></div></div>
+    <div class="road-step"><div class="dot">03</div><div><span>NEXT / 2 HOURS</span><h2>SQL joins & queries</h2><p>Practice JOIN, GROUP BY and common interview patterns.</p></div></div>
+    <div class="road-step"><div class="dot">04</div><div><span>CHALLENGE / NEXT</span><h2>Mock Interview #02</h2><p>Return to the interview and measure your improvement.</p><button class="inline-btn" onclick="go('interview')">PRACTICE AGAIN ↗</button></div></div>
+  </div>
+  <div class="road-bottom"><span class="label">42% ROADMAP COMPLETE</span><h2>Keep going. Your next answer<br>can be <em>stronger.</em></h2><button class="mass-btn" onclick="go('interview')">CONTINUE ↗</button></div>
+</section>
+</main>
+
+<footer><div class="logo"><span class="logo-box">IQ</span><span>INTERVIEW<span class="violet">IQ</span></span></div><p>AI career intelligence · Ideathon prototype</p><span>© 2026</span></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
